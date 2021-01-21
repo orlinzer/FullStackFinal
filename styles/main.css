@@ -15,8 +15,8 @@
   --primary-background-color: #cccccc;
   --secondary-background-color: #888888;
 
-  --header-height: 2rem; /* XXX */
-  --footer-height: 2rem; /* XXX */
+  --header-height: 2em; /* XXX */
+  --footer-height: 2em; /* XXX */
 
   background-color: none;
   background-repeat: no-repeat;
@@ -44,26 +44,17 @@ body {
 }
 
 header {
-  /* display: flex; */
+  display: block;
 
-  /* position: sticky; */
+  position: sticky;
 
   width: 100%;
-  /* min-height: 2em; */
-  /* height: auto; */
   height: var(--header-height);
 
   /* top: 0;
   left: 0;
   right: 0;
   bottom: auto; */
-
-  /* flex-flow: row nowrap; */
-  /* flex-direction: row; */
-  /* flex-wrap: nowrap; */
-  /* flex-grow: ; */
-  /* flex-shrink: ; */
-  /* flex-basis: auto; */
 
   color: var(--primary-color);
   background-color: var(--secondary-background-color);
@@ -100,7 +91,7 @@ footer {
 }
 
 img {
-  display: block;
+  display: inline-block;
 
   /* max-width: 100%; */
   /* height: auto; */
@@ -114,14 +105,18 @@ nav {
 
   flex-direction: row;
   flex-wrap: nowrap;
+  flex-basis: auto;
 
   justify-content: start;
+
+  align-content: flex-start;
+  align-items: center;
 }
 
 nav a,
 nav a:link,
 nav a:visited {
-  padding: 0.5em 1em;
+  /* padding: 0.5em 1em; */
 
   text-decoration: none;
 
