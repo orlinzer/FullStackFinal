@@ -1,5 +1,5 @@
 # FullStackFinal
 
-<h2>This is the final project for Full Stack Course.</h2>
+## This is the final project for Full Stack Course
 
-<p>Created By: Or Linzer and Itamar Kalimi<p>
+**Created By**: Or Linzer and Itamar Kalimi
