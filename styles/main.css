@@ -1,5 +1,42 @@
 /* #region main */
 
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(lib/materialdesign-icons/font/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+
 *,
 *::before,
 *::after {
@@ -100,6 +137,8 @@ img {
 nav {
   display: flex;
 
+  overflow: hidden; /* ? */
+
   width: 100%;
   height: 100%;
 
@@ -113,9 +152,9 @@ nav {
   align-items: center;
 }
 
-nav a,
-nav a:link,
-nav a:visited {
+nav div a,
+nav div a:link,
+nav div a:visited {
   /* padding: 0.5em 1em; */
 
   text-decoration: none;
@@ -123,42 +162,44 @@ nav a:visited {
   color: var(--primary-color);
 }
 
-nav a:hover,
-nav a:focus {
+nav div a:hover,
+nav div a:focus {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-nav a:active {
+nav div a:active {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-nav a.active {
+nav div a.active {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-a#logo {
+nav div a {
   display: inline-block;
-  padding: 0;
 
   width: var(--footer-height);
   height: var(--footer-height);
 }
 
-a#logo img {
+nav div a img {
   display: inline-block;
-  /* padding: 0; */
 
   width: var(--footer-height);
   height: var(--footer-height);
 }
 
-a#logo img:link,
-a#logo img:visited {
+nav div a img:link,
+nav div a img:visited {
 }
-a#logo img:focus,
-a#logo img:hover,
-a#logo img:active {
+nav div a img:focus,
+nav div a img:hover,
+nav div a img:active {
   /* background-color: var(--primary-background-color); */
+}
+
+nav div input[type=text] {
+
 }
 
 /* #endregion main */

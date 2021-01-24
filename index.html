@@ -11,22 +11,54 @@
   <body>
     <header>
       <nav>
-        <a id="logo" href="/">
-          <img
-            height="calc(var(--header-height) * 0.75)"
-            width="calc(var(--header-height) * 0.75)"
-            src="images/svg/account_circle-black-48dp.svg"
-            alt="LOGO"
-          />
-        </a>
-        <!-- <a href="/views/feed.html">feed</a> -->
-        <a href="/views/profile.html">profile</a>
+        <div title="Feed">
+          <a href="">
+            <img
+              width="var(--footer-height)"
+              height="var(--footer-height)"
+              src="icons/bug_report/svg/bug_report-black-48dp.svg"
+              alt="Logo"
+            />
+          </a>
+        </div>
+        <div title="Search">
+          <input type="text" placeholder="Search.." />
+          <a href="">
+            <img
+              width="var(--footer-height)"
+              height="var(--footer-height)"
+              src="icons/search/svg/search-black-48dp.svg"
+              alt="Search"
+            />
+          </a>
+        </div>
+        <div title="Settings">
+          <a href="">
+            <img
+              width="var(--footer-height)"
+              height="var(--footer-height)"
+              src="icons/settings/svg/settings-black-48dp.svg"
+              alt="Settings"
+            />
+          </a>
+        </div>
+        <div title="Account">
+          <a href="/views/profile.html">
+            <img
+              width="var(--footer-height)"
+              height="var(--footer-height)"
+              src="icons/account_circle/svg/account_circle-black-48dp.svg"
+              alt="Account"
+            />
+          </a>
+        </div>
       </nav>
     </header>
     <main>
       <noscript>
         <h2>This website work better with javascript running.</h2>
       </noscript>
+      <figure>This is for addvertizes</figure>
       <p>This is a test paragraph that should be removed.</p>
       <p>This is a test paragraph that should be removed.</p>
       <p>This is a test paragraph that should be removed.</p>
