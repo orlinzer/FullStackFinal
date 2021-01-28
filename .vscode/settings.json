@@ -1,5 +1,13 @@
 {
   "files.watcherExclude": {
     "**/lib/**": true
-  }
+  },
+  "liveServer.settings.ignoreFiles": [
+    "lib/**",
+    "node_modules/**",
+    ".vscode/**",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.ts"
+  ]
 }

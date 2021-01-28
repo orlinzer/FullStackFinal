@@ -1,20 +1,19 @@
 /* #region main */
 
-
 @font-face {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url(lib/materialdesign-icons/font/MaterialIcons-Regular.ttf) format('truetype');
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(lib/materialdesign-icons/font/MaterialIcons-Regular.ttf)
+      format("truetype");
 }
 
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
+  font-size: 24px; /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -32,10 +31,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Support for IE. */
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
 }
-
-
 
 *,
 *::before,
@@ -55,10 +52,17 @@
   --header-height: 2em; /* XXX */
   --footer-height: 2em; /* XXX */
 
-  background-color: none;
+  background: none;
+  background-color: transparent;
   background-repeat: no-repeat;
+  /* background-repeat-x: no-repeat; */
+  /* background-repeat-y: no-repeat; */
   background-position: 0;
+  background-position-x: 0;
+  background-position-y: 0;
   background-size: cover;
+
+  --menu-min-width: calc(4 * var(--header-height));
 }
 
 html {
@@ -80,21 +84,61 @@ body {
   /* background-color: var(--primary-background-color); */
 }
 
+/* #region scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  /* border-radius: 10px; */
+  /* display: block;
+  position: absolute; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 0.5em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* * {
+  scrollbar-width: auto;
+  scrollbar-color: var(--secondary-color);
+} */
+
+/* #endregion scrollbar */
+
 header {
-  display: block;
+  /* display: block; */
+  display: flex;
 
   position: sticky;
 
   width: 100%;
   height: var(--header-height);
 
-  /* top: 0;
-  left: 0;
-  right: 0;
-  bottom: auto; */
+  top: 0;
 
   color: var(--primary-color);
   background-color: var(--secondary-background-color);
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+
+  justify-content: start;
+
+  align-content: flex-start;
+  align-items: center;
 }
 
 main {
@@ -110,21 +154,38 @@ main {
 }
 
 footer {
-  display: block;
+  /* display: block; */
+  display: flex;
 
-  /* position: absolute;
-
-  left: 0;
-  right: 0;
-  bottom: 0; */
+  position: static;
 
   width: 100%;
   min-height: var(--footer-height);
   height: auto;
-  /* height: var(--footer-height); */
 
   color: var(--primary-color);
   background-color: var(--secondary-background-color);
+
+  /* margin: auto; */
+
+  /* text-align: center; */
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+  /* flex-grow: 1; */
+
+  justify-content: space-between;
+
+  align-content: center;
+  align-items: center;
+
+  /* text-align: center; */
+}
+
+footer * {
+  /* flex-grow: 1; */
+  text-align: center;
+  padding: 0 1em;
 }
 
 img {
@@ -134,72 +195,138 @@ img {
   /* height: auto; */
 }
 
+header * {
+  height: var(--header-height);
+}
+
 nav {
   display: flex;
 
-  overflow: hidden; /* ? */
+  /* overflow: hidden; */
 
   width: 100%;
-  height: 100%;
 
   flex-direction: row;
   flex-wrap: nowrap;
   flex-basis: auto;
 
-  justify-content: start;
+  justify-content: flex-end;
+
+  align-content: flex-end;
+  align-items: center;
+
+  /* justify-self: stretch; */ /* TODO */
+}
+
+header div,
+header form {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+
+  justify-content: flex-start;
 
   align-content: flex-start;
   align-items: center;
 }
 
-nav div a,
-nav div a:link,
-nav div a:visited {
-  /* padding: 0.5em 1em; */
+form.search input[type="submit"] {
+  background-image: url(../icons/search/svg/search-black-48dp.svg);
+}
 
+header a,
+header a:link,
+header a:visited,
+header input[type="submit"],
+header input[type="submit"]:link,
+header input[type="submit"]:visited {
   text-decoration: none;
 
   color: var(--primary-color);
 }
 
-nav div a:hover,
-nav div a:focus {
+header a:hover,
+header a:focus,
+header input[type="submit"]:hover,
+header input[type="submit"]:focus {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-nav div a:active {
+header a:active,
+header input[type="submit"]:active {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-nav div a.active {
+header a.active,
+header input[type="submit"]:active {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-nav div a {
+header a,
+header input[type="submit"] {
   display: inline-block;
 
-  width: var(--footer-height);
-  height: var(--footer-height);
+  width: var(--header-height);
 }
 
-nav div a img {
+header img,
+header img,
+header input[type="submit"] {
   display: inline-block;
 
-  width: var(--footer-height);
-  height: var(--footer-height);
+  width: var(--header-height);
 }
 
-nav div a img:link,
-nav div a img:visited {
+header img:link,
+header img:visited {
 }
-nav div a img:focus,
-nav div a img:hover,
-nav div a img:active {
+header img:focus,
+header img:hover,
+header img:active {
   /* background-color: var(--primary-background-color); */
 }
 
-nav div input[type=text] {
+input[type="text"] {
+  background-color: #fff;
+  border-radius: calc(var(--header-height) / 2);
+  height: var(--header-height);
+  padding: 1em;
+}
 
+/* header nav div input[type="text"] { */
+/* width: 400px; */
+/* flex-grow: 1; */
+/* } */
+
+div.menu {
+  display: flex;
+
+  min-width: var(--menu-min-width);
+}
+
+div.menu > * {
+  padding: 0 1em;
+  width: 100%;
+}
+
+div.account {
+  position: relative;
+}
+
+div.account div.menu {
+  display: none;
+  position: absolute;
+
+  top: var(--header-height);
+  right: 0;
+
+  flex-direction: column;
+}
+
+div.account:hover div.menu {
+  display: flex;
 }
 
 /* #endregion main */
