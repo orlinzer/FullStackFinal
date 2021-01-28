@@ -44,10 +44,11 @@
   border: 0;
   padding: 0;
 
-  --primary-color: #ff7f00;
-  --secondary-color: #ffbf4f;
-  --primary-background-color: #cccccc;
-  --secondary-background-color: #888888;
+  --primary-color: #000;
+  --them-color: #88f;
+  --background-color: #fff;
+  --background-them-color: #ccf;
+
 
   --header-height: 2em; /* XXX */
   --footer-height: 2em; /* XXX */
@@ -81,7 +82,7 @@ body {
 
   font-size: 2rem;
 
-  /* background-color: var(--primary-background-color); */
+  background-color: var(--background-them-color);
 }
 
 /* #region scrollbar */
@@ -97,11 +98,14 @@ body {
   /* border-radius: 10px; */
   /* display: block;
   position: absolute; */
+  /* background-color: rgba(var(--them-color), 0.25); */
+  /* color: rgba(var(--them-color), 0.25); */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary-color);
+  /* color: var(--them-color); */
+  background: var(--background-color);
   border-radius: 0.5em;
 }
 
@@ -129,7 +133,7 @@ header {
   top: 0;
 
   color: var(--primary-color);
-  background-color: var(--secondary-background-color);
+  background-color: var(--them-color);
 
   flex-direction: row;
   flex-wrap: nowrap;
@@ -146,11 +150,13 @@ main {
 
   position: static;
 
-  width: 100%;
+  margin: auto;
+
+  width: 60%;
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
 
   color: var(--primary-color);
-  background-color: var(--primary-background-color);
+  background-color: var(--background-color);
 }
 
 footer {
@@ -164,7 +170,7 @@ footer {
   height: auto;
 
   color: var(--primary-color);
-  background-color: var(--secondary-background-color);
+  background-color: var(--them-color);
 
   /* margin: auto; */
 
@@ -311,11 +317,11 @@ div.menu > * {
   width: 100%;
 }
 
-div.account {
+div.menu-opener {
   position: relative;
 }
 
-div.account div.menu {
+div.menu-opener div.menu {
   display: none;
   position: absolute;
 
@@ -325,7 +331,7 @@ div.account div.menu {
   flex-direction: column;
 }
 
-div.account:hover div.menu {
+div.menu-opener:hover div.menu {
   display: flex;
 }
 
