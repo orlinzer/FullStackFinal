@@ -2,12 +2,14 @@
   "name": "FullStackFinal",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./develop/index.js",
   "directories": {
     "doc": "doc",
     "lib": "lib"
   },
-  "scripts": {},
+  "scripts": {
+    "update": "node ./develop/index.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
