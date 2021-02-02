@@ -49,7 +49,6 @@
   --background-color: #fff;
   --background-them-color: #ccf;
 
-
   --header-height: 2em; /* XXX */
   --footer-height: 2em; /* XXX */
 
@@ -149,6 +148,7 @@ main {
   position: static;
 
   margin: auto;
+  padding: 1em;
 
   width: 60%;
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
@@ -236,8 +236,25 @@ header form {
   align-items: center;
 }
 
+form.search {
+  display: flex;
+
+  flex-direction: row;
+
+  flex-grow: 1;
+}
+
 form.search input[type="submit"] {
   background-image: url(../icons/search/svg/search-black-48dp.svg);
+}
+
+form.search input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+form.search input[type="text"] {
+  /* TODO */
+  flex-grow: 1;
 }
 
 header a,
@@ -294,10 +311,10 @@ header img:active {
 
 input[type="text"] {
   background-color: #fff;
-  border-radius: calc(var(--header-height) / 2);
+  border-radius: calc(1.5em / 2);
   border-color: var(--primary-color);
-  height: var(--header-height);
-  padding: 1em;
+  height: 1.5em;
+  padding: 0.5em;
 }
 
 /* header nav div input[type="text"] { */
@@ -340,3 +357,39 @@ div.menu-opener:hover div.menu {
 }
 
 /* #endregion main */
+
+@-ms-keyframes grow-left {
+  0% {
+    width: 0;
+  }
+  100% {}
+}
+
+@-moz-keyframes grow-left {
+  0% {
+    width: 0;
+  }
+
+  100% {}
+}
+
+@-webkit-keyframes grow-left {
+  0% {
+    width: 0;
+  }
+
+  100% {}
+}
+
+@keyframes grow-left {
+  0% {
+    width: 0;
+  }
+
+  100% {}
+}
+
+header > nav > form.search > input[type="submit"] {
+  /* TODO: change the nav width... */
+  /* TODO: make the text input in the main to textarea and resize them */
+}

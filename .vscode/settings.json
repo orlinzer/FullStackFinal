@@ -6,8 +6,12 @@
     "lib/**",
     "node_modules/**",
     ".vscode/**",
+    "develop/**",
     "**/*.scss",
     "**/*.sass",
     "**/*.ts"
+  ],
+  "cSpell.words": [
+    "endregion"
   ]
 }
