@@ -9,7 +9,7 @@ p {
   width: 400px;
 }
 
-.name :hover {
+.name:hover {
   background-color: cornflowerblue;
 }
 
@@ -20,7 +20,7 @@ p {
   width: 600px;
 }
 
-.discription :hover {
+.discription:hover {
   background-color: cornflowerblue;
 }
 
