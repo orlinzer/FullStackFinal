@@ -1,0 +1,39 @@
+p {
+  color: var(--primary-color);
+}
+
+.name {
+  margin: 1em;
+  padding: 1em;
+  border: solid 5px blue;
+  width: 400px;
+}
+
+.name :hover {
+  background-color: cornflowerblue;
+}
+
+.discription {
+  margin: 1em;
+  padding: 1em;
+  border: solid 5px blue;
+  width: 600px;
+}
+
+.discription :hover {
+  background-color: cornflowerblue;
+}
+
+span {
+  margin: 0 1em;
+  padding: 0;
+  width: 10px;
+}
+
+.post {
+  margin: 0em 4em;
+  padding: 1em;
+  border: solid 1px rgb(78, 78, 235);
+  width: 400px;
+  border-radius: 30px;
+}
