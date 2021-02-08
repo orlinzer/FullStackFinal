@@ -1,5 +1,40 @@
+img {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 p {
   color: var(--primary-color);
+}
+
+.innnermenu {
+  position: relative;
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.innnermenu li {
+  display: inline;
+  float: left;
+  border-radius: 30px;
+}
+
+.innnermenu li:hover {
+  background-color: cornflowerblue;
+}
+
+.innnermenu li a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .name {
@@ -20,14 +55,12 @@ p {
   width: 600px;
 }
 
-.discription:hover {
-  background-color: cornflowerblue;
+.hede {
+  font-size: 2em;
 }
 
-span {
-  margin: 0 1em;
-  padding: 0;
-  width: 10px;
+.discription:hover {
+  background-color: cornflowerblue;
 }
 
 .post {
