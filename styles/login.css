@@ -1,0 +1,16 @@
+form.sign-in {
+  background-color: var(--them-color);
+  border-radius: 1em;
+
+  padding: 0.5em 1em;
+}
+
+form.sign-in > input[type="text"],
+form.sign-in > input[type="email"],
+form.sign-in > input[type="password"] {
+  background-color: white;
+  border-radius: 1em;
+
+  padding: 0.5em 1em;
+  margin: 0.5em 1em;
+}

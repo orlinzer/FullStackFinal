@@ -11,33 +11,34 @@
   </head>
   <body>
     <header>
-      <div class="logo" title="Feed">
-        <a href="">
-          <img
-            width="var(--footer-height)"
-            height="var(--footer-height)"
-            src="icons/bug_report/svg/bug_report-black-48dp.svg"
-            alt="Logo"
-          />
-        </a>
-      </div>
+      <a class="logo" href="index.html" title="Feed">
+        <img
+          width="var(--footer-height)"
+          height="var(--footer-height)"
+          src="icons/bug_report/svg/bug_report-black-48dp.svg"
+          alt="Logo"
+        />
+      </a>
+      <a class="slogan" href="index.html">
+        <h1>DSN</h1>
+      </a>
+      <form
+        name="search"
+        action=""
+        method="get"
+        target="_top"
+        class="search"
+        title="Search"
+      >
+        <input type="text" placeholder="Search..." name="search" />
+        <input
+          type="submit"
+          value=""
+          width="var(--footer-height)"
+          height="var(--footer-height)"
+        />
+      </form>
       <nav>
-        <form
-          name="search"
-          action=""
-          method="get"
-          target="_top"
-          class="search"
-          title="Search"
-        >
-          <input type="text" placeholder="Search..." name="search" />
-          <input
-            type="submit"
-            value=""
-            width="var(--footer-height)"
-            height="var(--footer-height)"
-          />
-        </form>
         <div class="settings menu-opener" title="Settings">
           <a href="">
             <img
@@ -72,11 +73,38 @@
       <noscript>
         <h2>This website work better with javascript running.</h2>
       </noscript>
-      <form action="" method="get">
-        <input type="text" name="user-name" id="" />
-        in
-        <input type="password" name="password" id="" />
-        <input type="password" name="" id="" />
+      <form class="sign-in" action="" method="get" autocomplete="on">
+        <label for=""></label>
+        <!-- <fieldset></fieldset> -->
+        <fieldset disabled="disabled"></fieldset>
+        <input
+          type="text"
+          name="user-name"
+          id=""
+          autocomplete="username"
+          placeholder="user name"
+        />
+        <input
+          type="email"
+          name="email"
+          id=""
+          autocomplete="email"
+          placeholder="e-mail"
+        />
+        <input
+          type="password"
+          name="password"
+          id=""
+          autocomplete="new-password"
+          placeholder="password"
+        />
+        <input
+          type="password"
+          name="password-confirm"
+          id=""
+          autocomplete="new-password"
+          placeholder="password confirmation"
+        />
       </form>
     </main>
     <aside></aside>
