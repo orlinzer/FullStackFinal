@@ -1,15 +1,4 @@
 .gallery {
-  /* display: flex;
-
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
-  justify-items: center;
-
-  align-content: flex-start;
-  align-items: center; */
-
   text-align: center;
 }
 
@@ -31,10 +20,6 @@
   border-radius: 1em;
   overflow: hidden;
 
-  /* background-color: black; */
-
-  /* TODO: remove */
-  /* border: solid black 1px; */
 }
 
 .gallery img {
@@ -46,6 +31,5 @@
 }
 
 .gallery img:hover {
-  /* TODO: animated */
   transform: scale(1.05);
 }

@@ -12,14 +12,9 @@
 .name {
   margin: 1em 0;
   padding: 1em;
-  /* border: solid 5px blue; */
   width: 100%;
   border-radius: 1em;
   background-color: var(--them-color);
-}
-
-.name:hover {
-  /* background-color: cornflowerblue; */
 }
 
 /* #endregion name */
@@ -29,7 +24,6 @@
 .discription {
   margin: 1em 0;
   padding: 1em;
-  /* border: solid 5px blue; */
   width: 100%;
   overflow: visible;
 
@@ -37,18 +31,12 @@
   background-color: var(--them-color);
 }
 
-.discription:hover {
-  /* background-color: cornflowerblue; */
-}
-
 /* #endregion discription */
 
 /* #region post */
 
 .post {
-  /* margin: 1em 4em; */
   padding: 1em;
-  /* border: solid 1px rgb(78, 78, 235); */
   width: 100%;
   border-radius: 30px;
 
@@ -71,7 +59,6 @@ table caption {
 table,
 th,
 td {
-  /* min-width: max-content; */
   border-collapse: collapse;
   border-color: var(--them-color);
   border-style: solid;
@@ -85,7 +72,7 @@ th {
 }
 
 tr + tr:hover {
-  background-color: cornflowerblue;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 table .logo {

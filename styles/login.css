@@ -58,13 +58,6 @@ main table {
   width: 100%;
   table-layout: fixed;
   text-align: center;
-  /* table-layout: fixed; */
-}
-
-main table,
-main td {
-  /* border-collapse: collapse; */
-  /* border: black solid 1px; */
 }
 
 main h2 {
