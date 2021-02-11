@@ -38,42 +38,59 @@
           height="var(--footer-height)"
         />
       </form>
-      <nav>
-        <div class="settings menu-opener" title="Settings">
-          <a href="">
-            <img
-              width="var(--footer-height)"
-              height="var(--footer-height)"
-              src="icons/settings/svg/settings-black-48dp.svg"
-              alt="Settings"
-            />
-          </a>
-          <div class="menu">
-            <a>Nan</a>
-          </div>
-        </div>
-        <div class="account menu-opener" title="Account">
-          <a href="profile.html">
-            <img
-              width="var(--footer-height)"
-              height="var(--footer-height)"
-              src="icons/account_circle/svg/account_circle-black-48dp.svg"
-              alt="Account"
-            />
-          </a>
-          <div class="menu">
-            <a href="profile.html">Profile</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="login.html">Sign in / Sign up / Sign out</a>
-          </div>
-        </div>
-      </nav>
+      <div class="account menu-opener" title="Account">
+        <a href="profile.html">
+          <img
+            width="var(--footer-height)"
+            height="var(--footer-height)"
+            src="icons/account_circle/svg/account_circle-black-48dp.svg"
+            alt="Account"
+          />
+        </a>
+        <nav class="menu">
+          <a href="profile.html">Profile</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="login.html">Sign in / Sign up / Sign out</a>
+        </nav>
+      </div>
     </header>
     <main>
       <noscript>
         <h2>This website work better with javascript running.</h2>
       </noscript>
       <form class="sign-in" action="" method="get" autocomplete="on">
+        <h2>Sign In</h2>
+        <label for=""></label>
+        <!-- <fieldset></fieldset> -->
+        <fieldset disabled="disabled"></fieldset>
+        <input
+          type="text"
+          name="user-name"
+          id=""
+          autocomplete="username"
+          placeholder="user name"
+        />
+        <input
+          type="password"
+          name="password"
+          id=""
+          autocomplete="new-password"
+          placeholder="password"
+        />
+        <table>
+          <tr>
+            <td>
+              <input type="submit" value="Sign in" />
+            </td>
+            <td>
+              <input type="reset" value="Reset" />
+            </td>
+            <!-- <th></th> -->
+          </tr>
+        </table>
+      </form>
+      <form class="sign-up" action="" method="get" autocomplete="on">
+        <h2>Sign Up</h2>
         <label for=""></label>
         <!-- <fieldset></fieldset> -->
         <fieldset disabled="disabled"></fieldset>
@@ -105,12 +122,32 @@
           autocomplete="new-password"
           placeholder="password confirmation"
         />
+        <table>
+          <tr>
+            <td>
+              <input type="submit" value="Create" />
+            </td>
+            <td>
+              <input type="reset" value="Reset" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <form class="sign-out" action="" method="get" autocomplete="on">
+        <h2>Sign Out</h2>
+        <label for=""></label>
+        <!-- <fieldset></fieldset> -->
+        <fieldset disabled="disabled"></fieldset>
+        <table>
+          <tr>
+            <td>
+              <input type="submit" value="Sign Out" />
+            </td>
+          </tr>
+        </table>
       </form>
     </main>
-    <aside></aside>
-    <!-- <footer>Created By Or Linzer And Itamar Kalimi</footer> -->
     <footer>
-      <!-- <h3></h3> -->
       <p>This is the final project for Full Stack Course</p>
       <p>
         &copy;

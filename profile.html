@@ -38,91 +38,94 @@
           height="var(--footer-height)"
         />
       </form>
-      <nav>
-        <div class="settings menu-opener" title="Settings">
-          <a href="">
-            <img
-              width="var(--footer-height)"
-              height="var(--footer-height)"
-              src="icons/settings/svg/settings-black-48dp.svg"
-              alt="Settings"
-            />
-          </a>
-          <div class="menu">
-            <a>Nan</a>
-          </div>
+      <div class="menu-opener" title="Account">
+        <a href="profile.html">
+          <img
+            width="var(--footer-height)"
+            height="var(--footer-height)"
+            src="icons/account_circle/svg/account_circle-black-48dp.svg"
+            alt="Account"
+          />
+        </a>
+        <nav class="menu">
+          <a href="profile.html">Profile</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="login.html">Sign in / Sign up / Sign out</a>
+        </nav>
+      </div>
+      <div class="menu-opener" title="Account">
+        <a href="profile.html">
+          <img
+            width="var(--footer-height)"
+            height="var(--footer-height)"
+            src="icons/menu/svg/menu-black-48dp.svg"
+            alt="Menu"
+          />
+        </a>
+        <div class="menu">
+          <a href="#piclink">Profile image</a>
+          <a href="#namelink">Name</a>
+          <a href="#discriptionlink">Discription</a>
+          <a href="#postlink">Post</a>
+          <a href="#portfoliolink">Portfolio</a>
         </div>
-        <div class="account menu-opener" title="Account">
-          <a href="profile.html">
-            <img
-              width="var(--footer-height)"
-              height="var(--footer-height)"
-              src="icons/account_circle/svg/account_circle-black-48dp.svg"
-              alt="Account"
-            />
-          </a>
-          <div class="menu">
-            <a href="profile.html">Profile</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="login.html">Sign in / Sign up / Sign out</a>
-          </div>
-        </div>
-      </nav>
+      </div>
     </header>
     <main>
       <noscript>
-      <h2>This website work better with javascript running.</h2>
-    </noscript>
-    <ul class="innnermenu">
-      <li><a href="#piclink">Profile image</a></li>
-      <li><a href="#namelink">name</a></li>
-      <li><a href="#discriptionlink">discription</a></li>
-      <li><a href="#postlink">post</a></li>
-    </ul>
-    <img id="piclink" class="profilepic" src="images/persons/image2.jpeg" width="" height="">
-    <div id="namelink" class="name">
-      <p>
-      <h2 class="hede">Israel Israeli</h2>
-      </p>
-    </div>
-    <div id="discriptionlink" class="discription">
-      <p>
-      <h3 class="hede">About me:</h3>
-      I am a Full Stack We Developer
-      </p>
-    </div>
-    <div id="postlink" class="post">
-      <p>I Build a cool website!</p>
-    </div>
-    <table class="Portfolio">
-      <caption>
-        Portfolio
-      </caption>
-      <tbody>
-        <tr>
-          <th>Facebook</th>
-          <td><a href="wwww.facebook.com">Facebook</a></td>
-        </tr>
-        <tr>
-          <th>Twitter</th>
-          <td><a href="wwww.twitter.com">Twitter</a></td>
-        </tr>
-        <tr>
-          <th>Google</th>
-          <td><a href="wwww.google.com">Google</a></td>
-        </tr>
-        <tr>
-          <th>Amazon</th>
-          <td><a href="wwww.amazon.com">Amazon</a></td>
-        </tr>
-      </tbody>
-      </tfoot>
-    </table>
+        <h2>This website work better with javascript running.</h2>
+      </noscript>
+
+      <img id="piclink" class="profilepic" src="images/persons/image2.jpeg" width="" height="">
+      <div id="namelink" class="name">
+        <h2>Name:</h2>
+        <p>Israel Israeli</p>
+      </div>
+      <div id="discriptionlink" class="discription">
+        <h3 class="hede">About me:</h3>
+        <p>
+          I have been working with web development since 2010, the period during which I have worked in different environments, from big consultancy companies to start-ups. I am a self-motivated and self-taught professional who likes to solve problems.</p>
+          <p>I merge a passion for usability and user experience with technical knowledge to create cool digital experiences. My repertoire includes programming languages and tools such as ReactJS, EmberJS, Mobx, Wordpress, SailsJS, MySQL, PostgreSQL, Nginx and Apache server configuration, Gulp, SASS, LESS, Twitter Bootstrap, Susy, jQuery, and more.
+        </p>
+      </div>
+      <div id="postlink" class="post">
+        <p>I Build a cool website!</p>
+      </div>
+      <table id="portfoliolink">
+        <caption>
+          <strong>Portfolio</strong>
+        </caption>
+        <tbody>
+          <tr>
+            <th class="logo">logo</th>
+            <th>name</th>
+            <th>link</th>
+          </tr>
+          <tr>
+            <td><img src="icons/f-Logos-2019-1/f_logo_online_04_2019/color/PNG/f_logo_RGB-Blue_250.png" alt=""></td>
+            <td>Facebook</td>
+            <td><a href="wwww.facebook.com">Facebook</a></td>
+          </tr>
+          <tr>
+            <td><img src="icons/twitter-logo-01282021/Twitter logo/SVG/Logo blue.svg" alt=""></td>
+            <td>Twitter</td>
+            <td><a href="wwww.twitter.com">Twitter</a></td>
+          </tr>
+          <tr>
+            <td><img src="icons/google/google-new-logo-450x450.jpg" alt=""></td>
+            <td>Google</td>
+            <td><a href="wwww.google.com">Google</a></td>
+          </tr>
+          <tr>
+            <td><img src="icons/amazon/480-4803237_amazon-icon-amazon-logo-png-icon.jpg" alt=""></td>
+            <td>Amazon</td>
+            <td><a href="wwww.amazon.com">Amazon</a></td>
+          </tr>
+        </tbody>
+        </tfoot>
+      </table>
     </main>
-    <aside></aside>
-    <!-- <footer>Created By Or Linzer And Itamar Kalimi</footer> -->
     <footer>
-      <!-- <h3></h3> -->
       <p>This is the final project for Full Stack Course</p>
       <p>
         &copy;

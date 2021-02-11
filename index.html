@@ -41,36 +41,21 @@
           height="var(--footer-height)"
         />
       </form>
-      <nav>
-        <div class="settings menu-opener" title="Settings">
-          <a href="">
-            <img
-              width="var(--footer-height)"
-              height="var(--footer-height)"
-              src="icons/settings/svg/settings-black-48dp.svg"
-              alt="Settings"
-            />
-          </a>
-          <div class="menu">
-            <a>Nan</a>
-          </div>
-        </div>
-        <div class="account menu-opener" title="Account">
-          <a href="profile.html">
-            <img
-              width="var(--footer-height)"
-              height="var(--footer-height)"
-              src="icons/account_circle/svg/account_circle-black-48dp.svg"
-              alt="Account"
-            />
-          </a>
-          <div class="menu">
-            <a href="profile.html">Profile</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="login.html">Sign in / Sign up / Sign out</a>
-          </div>
-        </div>
-      </nav>
+      <div class="account menu-opener" title="Account">
+        <a href="profile.html">
+          <img
+            width="var(--footer-height)"
+            height="var(--footer-height)"
+            src="icons/account_circle/svg/account_circle-black-48dp.svg"
+            alt="Account"
+          />
+        </a>
+        <nav class="menu">
+          <a href="profile.html">Profile</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="login.html">Sign in / Sign up / Sign out</a>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- #region new post -->
@@ -81,22 +66,23 @@
       </form>
       <!-- #endregion new post -->
 
-      <!-- #region posts -->
+      <!-- #region posts 1 -->
       <div class="post">
         <div class="post-header">
-          <img
-            width="calc(var(--footer-height) / 2)"
-            height="calc(var(--footer-height) / 2)"
-            src="icons/account_circle/svg/account_circle-black-48dp.svg"
-            alt="Profile Image"
-          />
-          <h4>Name of the poster</h4>
+          <div class="avatar-holder">
+            <img
+              width="calc(var(--footer-height) / 2)"
+              height="calc(var(--footer-height) / 2)"
+              src="images/persons/image.jpeg"
+              alt="Profile Image"
+            />
+          </div>
+          <h4>Help</h4>
         </div>
         <div class="post-body">
           <p>
-            bla bla bla this is a post <br />
-            bli bli bli this is a new line <br />
-            blue blue blue and this is another one
+            i need a good advice about a problam i have with my css file please
+            help me!
           </p>
         </div>
         <div class="post-footer">
@@ -121,16 +107,128 @@
           <div class="comment-section">
             <div class="comment">
               <div class="comment-header">
-                <img
-                  width="calc(var(--footer-height) / 2)"
-                  height="calc(var(--footer-height) / 2)"
-                  src="icons/account_circle/svg/account_circle-black-48dp.svg"
-                  alt="Profile Image"
-                />
-                <h4>Name of the commenter</h4>
+                <div class="avatar-holder">
+                  <img
+                    width="calc(var(--footer-height) / 2)"
+                    height="calc(var(--footer-height) / 2)"
+                    src="icons/account_circle/svg/account_circle-black-48dp.svg"
+                    alt="Profile Image"
+                  />
+                </div>
+                <h4>Random commenter</h4>
               </div>
               <div class="comment-body">
-                <p>bla bla bla I write stuff here...</p>
+                <p>Google it!</p>
+              </div>
+              <div class="comment-footer">
+                <form class="commenter" name="commenter" action="" method="get">
+                  <input
+                    name="agree"
+                    type="submit"
+                    value=""
+                    onclick="this.classList.add('agreed')"
+                  />
+                </form>
+                <p class="counter">12</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion posts 1 -->
+
+      <!-- #region posts 2 -->
+      <div class="post">
+        <div class="post-header">
+          <div class="avatar-holder">
+            <img
+              width="calc(var(--footer-height) / 2)"
+              height="calc(var(--footer-height) / 2)"
+              src="images/persons/image.jpg"
+              alt="Profile Image"
+            />
+          </div>
+          <h4>Please Help!!!</h4>
+        </div>
+        <div class="post-body">
+          <p>
+            i need a partner for a new startup comment if you are interesting!
+          </p>
+        </div>
+        <div class="post-footer">
+          <form class="comment" name="comment" action="" method="get">
+            <input
+              width="calc(var(--footer-height) / 2)"
+              height="calc(var(--footer-height) / 2)"
+              name="agree"
+              type="submit"
+              value=""
+              onclick="this.classList.add('agreed')"
+            />
+            <input type="text" placeholder="Write a comment..." />
+            <input
+              width="calc(var(--footer-height) / 2)"
+              height="calc(var(--footer-height) / 2)"
+              name="send"
+              type="submit"
+              value=""
+            />
+          </form>
+          <div class="comment-section"></div>
+        </div>
+      </div>
+      <!-- #endregion posts 2 -->
+
+      <!-- #region posts 3 -->
+      <div class="post">
+        <div class="post-header">
+          <div class="avatar-holder">
+            <img
+              width="calc(var(--footer-height) / 2)"
+              height="calc(var(--footer-height) / 2)"
+              src="images/persons/image2.jpeg"
+              alt="Profile Image"
+            />
+          </div>
+          <h4>No Title</h4>
+        </div>
+        <div class="post-body">
+          <p>Does someone want me to give him a project of my costumer?</p>
+        </div>
+        <div class="post-footer">
+          <form class="comment" name="comment" action="" method="get">
+            <input
+              width="calc(var(--footer-height) / 2)"
+              height="calc(var(--footer-height) / 2)"
+              name="agree"
+              type="submit"
+              value=""
+              onclick="this.classList.add('agreed')"
+            />
+            <input type="text" placeholder="Write a comment..." />
+            <input
+              width="calc(var(--footer-height) / 2)"
+              height="calc(var(--footer-height) / 2)"
+              name="send"
+              type="submit"
+              value=""
+            />
+          </form>
+          <div class="comment-section">
+            <div class="comment">
+              <div class="comment-header">
+                <div class="avatar-holder">
+                  <img
+                    width="calc(var(--footer-height) / 2)"
+                    height="calc(var(--footer-height) / 2)"
+                    src="images/persons/image2.jpg"
+                    alt="Profile Image"
+                  />
+                </div>
+                <h4>Developer123</h4>
+              </div>
+              <div class="comment-body">
+                <p>Please contact me</p>
               </div>
               <div class="comment-footer">
                 <form class="commenter" name="commenter" action="" method="get">
@@ -147,16 +245,55 @@
           </div>
         </div>
       </div>
-      <!-- #endregion posts -->
+      <!-- #endregion posts 3 -->
+
+      <!-- #region posts 4 -->
+      <div class="post">
+        <div class="post-header">
+          <div class="avatar-holder">
+            <img
+              width="calc(var(--footer-height) / 2)"
+              height="calc(var(--footer-height) / 2)"
+              src="images/persons/image.jpeg"
+              alt="Profile Image"
+            />
+          </div>
+          <h4>?</h4>
+        </div>
+        <div class="post-body">
+          <p>
+            Can someone help become a senior web developer so i can find a job
+            as a senior web developer?
+          </p>
+        </div>
+        <div class="post-footer">
+          <form class="comment" name="comment" action="" method="get">
+            <input
+              width="calc(var(--footer-height) / 2)"
+              height="calc(var(--footer-height) / 2)"
+              name="agree"
+              type="submit"
+              value=""
+              onclick="this.classList.add('agreed')"
+            />
+            <input type="text" placeholder="Write a comment..." />
+            <input
+              width="calc(var(--footer-height) / 2)"
+              height="calc(var(--footer-height) / 2)"
+              name="send"
+              type="submit"
+              value=""
+            />
+          </form>
+          <div class="comment-section"></div>
+        </div>
+      </div>
+      <!-- #endregion posts 4 -->
 
       <!-- #region post loader -->
       <span class="loader"></span>
       <!-- #endregion post loader -->
     </main>
-    <!-- #region advertisement -->
-    <!-- TODO -->
-    <aside class="advertise"></aside>
-    <!-- #endregion advertisement -->
     <footer>
       <p>This is the final project for Full Stack Course</p>
       <p>

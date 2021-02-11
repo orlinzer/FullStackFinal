@@ -1,72 +1,99 @@
-img {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: 0;
-  left: 0;
+
+/* #region profilepic */
+
+.profilepic {
+  border-radius: 1em;
 }
 
-p {
-  color: var(--primary-color);
-}
+/* #endregion profilepic */
 
-.innnermenu {
-  position: relative;
-  top: 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.innnermenu li {
-  display: inline;
-  float: left;
-  border-radius: 30px;
-}
-
-.innnermenu li:hover {
-  background-color: cornflowerblue;
-}
-
-.innnermenu li a {
-  display: block;
-  color: blue;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+/* #region name */
 
 .name {
-  margin: 1em;
+  margin: 1em 0;
   padding: 1em;
-  border: solid 5px blue;
-  width: 400px;
+  /* border: solid 5px blue; */
+  width: 100%;
+  border-radius: 1em;
+  background-color: var(--them-color);
 }
 
 .name:hover {
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
 }
+
+/* #endregion name */
+
+/* #region discription */
 
 .discription {
-  margin: 1em;
+  margin: 1em 0;
   padding: 1em;
-  border: solid 5px blue;
-  width: 600px;
-}
+  /* border: solid 5px blue; */
+  width: 100%;
+  overflow: visible;
 
-.hede {
-  font-size: 2em;
+  border-radius: 1em;
+  background-color: var(--them-color);
 }
 
 .discription:hover {
+  /* background-color: cornflowerblue; */
+}
+
+/* #endregion discription */
+
+/* #region post */
+
+.post {
+  /* margin: 1em 4em; */
+  padding: 1em;
+  /* border: solid 1px rgb(78, 78, 235); */
+  width: 100%;
+  border-radius: 30px;
+
+  background-color: var(--them-color);
+}
+
+/* #endregion post */
+
+/* #region portfolio */
+
+table {
+  width: 100%;
+  background-color: var(--background-them-color);
+}
+
+table caption {
+  padding: 0.5em 1em;
+}
+
+table,
+th,
+td {
+  /* min-width: max-content; */
+  border-collapse: collapse;
+  border-color: var(--them-color);
+  border-style: solid;
+  border-width: 5px;
+  text-align: left;
+}
+
+td,
+th {
+  padding: 0.5em 1em;
+}
+
+tr + tr:hover {
   background-color: cornflowerblue;
 }
 
-.post {
-  margin: 0em 4em;
-  padding: 1em;
-  border: solid 1px rgb(78, 78, 235);
-  width: 400px;
-  border-radius: 30px;
+table .logo {
+  width: 10%;
 }
+
+table img {
+  width: 100%;
+}
+
+/* #endregion portfolio */
