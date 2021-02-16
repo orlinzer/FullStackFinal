@@ -1,0 +1,65 @@
+main form {
+  background-color: var(--them-color);
+  border-radius: 1em;
+
+  padding: 0.5em 1em;
+}
+
+main form input[type="text"],
+main form input[type="email"],
+main form input[type="password"] {
+  width: 100%;
+
+  background-color: white;
+  border-radius: 1em;
+
+  padding: 0.5em 1em;
+  margin: 0.5em 0em;
+}
+
+main form input[type="submit"],
+main form input[type="reset"] {
+  background-color: var(--background-them-color);
+  padding: 0.5em 1em;
+  border-radius: 1em;
+}
+
+main form input[type="submit"]:hover,
+main form input[type="reset"]:hover {
+  cursor: pointer;
+}
+
+main form input[type="submit"]:hover,
+main form input[type="reset"]:hover,
+main form input[type="submit"]:focus,
+main form input[type="reset"]:focus {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+main form input[type="submit"]:active,
+main form input[type="reset"]:active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+main form input[type="submit"]:active,
+main form input[type="reset"]:active {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+form.sign-up {
+  margin-top: 1em;
+}
+
+form.sign-out {
+  margin-top: 1em;
+}
+
+main table {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+}
+
+main h2 {
+  text-align: center;
+}

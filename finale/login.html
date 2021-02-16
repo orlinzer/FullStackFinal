@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSN</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="icons/bug_report/svg/bug_report-white-48dp.svg"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/login.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html" title="Feed">
+        <img src="icons/bug_report/svg/bug_report-black-48dp.svg" alt="Logo" />
+      </a>
+      <a class="slogan" href="index.html">
+        <h1>DSN</h1>
+      </a>
+      <form
+        name="search"
+        method="get"
+        target="_top"
+        class="search"
+        title="Search"
+      >
+        <input type="text" placeholder="Search..." name="search" />
+        <input type="submit" value="" />
+      </form>
+      <div class="account menu-opener" title="Account">
+        <a href="profile.html">
+          <img
+            src="icons/account_circle/svg/account_circle-black-48dp.svg"
+            alt="Account"
+          />
+        </a>
+        <nav class="menu">
+          <a href="profile.html">Profile</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="login.html">Sign in / Sign up / Sign out</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <noscript>
+        <h2>This website work better with javascript running.</h2>
+      </noscript>
+      <form class="sign-in" method="get" autocomplete="on">
+        <h2>Sign In</h2>
+
+        <fieldset disabled="disabled"></fieldset>
+        <input
+          type="text"
+          name="user-name"
+          autocomplete="username"
+          placeholder="user name"
+        />
+        <input
+          type="password"
+          name="password"
+          autocomplete="new-password"
+          placeholder="password"
+        />
+        <table>
+          <tr>
+            <td>
+              <input type="submit" value="Sign in" />
+            </td>
+            <td>
+              <input type="reset" value="Reset" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <form class="sign-up" method="get" autocomplete="on">
+        <h2>Sign Up</h2>
+
+        <fieldset disabled="disabled"></fieldset>
+        <input
+          type="text"
+          name="user-name"
+          autocomplete="username"
+          placeholder="user name"
+        />
+        <input
+          type="email"
+          name="email"
+          autocomplete="email"
+          placeholder="e-mail"
+        />
+        <input
+          type="password"
+          name="password"
+          autocomplete="new-password"
+          placeholder="password"
+        />
+        <input
+          type="password"
+          name="password-confirm"
+          autocomplete="new-password"
+          placeholder="password confirmation"
+        />
+        <table>
+          <tr>
+            <td>
+              <input type="submit" value="Create" />
+            </td>
+            <td>
+              <input type="reset" value="Reset" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <form class="sign-out" method="get" autocomplete="on">
+        <h2>Sign Out</h2>
+
+        <fieldset disabled="disabled"></fieldset>
+        <table>
+          <tr>
+            <td>
+              <input type="submit" value="Sign Out" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+    <footer>
+      <p>This is the final project for Full Stack Course</p>
+      <p>
+        &copy;
+        <strong>Created By:</strong>
+        Or Linzer and Itamar Kalimi
+      </p>
+    </footer>
+  </body>
+</html>

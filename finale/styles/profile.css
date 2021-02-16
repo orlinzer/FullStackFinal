@@ -1,0 +1,86 @@
+
+/* #region profilepic */
+
+.profilepic {
+  border-radius: 1em;
+}
+
+/* #endregion profilepic */
+
+/* #region name */
+
+.name {
+  margin: 1em 0;
+  padding: 1em;
+  width: 100%;
+  border-radius: 1em;
+  background-color: var(--them-color);
+}
+
+/* #endregion name */
+
+/* #region discription */
+
+.discription {
+  margin: 1em 0;
+  padding: 1em;
+  width: 100%;
+  overflow: visible;
+
+  border-radius: 1em;
+  background-color: var(--them-color);
+}
+
+/* #endregion discription */
+
+/* #region post */
+
+.post {
+  padding: 1em;
+  width: 100%;
+  border-radius: 30px;
+
+  background-color: var(--them-color);
+}
+
+/* #endregion post */
+
+/* #region portfolio */
+
+table {
+  width: 100%;
+  background-color: var(--background-them-color);
+}
+
+table caption {
+  padding: 0.5em 1em;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border-color: var(--them-color);
+  border-style: solid;
+  border-width: 5px;
+  text-align: left;
+}
+
+td,
+th {
+  padding: 0.5em 1em;
+}
+
+tr + tr:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+table .logo {
+  width: 10%;
+}
+
+table img {
+  width: 100%;
+}
+
+/* #endregion portfolio */

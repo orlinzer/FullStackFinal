@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSN</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="icons/bug_report/svg/bug_report-white-48dp.svg"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+  </head>
+  <body>
+    <noscript>
+      <h2>This website work better with javascript running.</h2>
+    </noscript>
+    <header>
+      <a class="logo" href="index.html" title="Feed">
+        <img src="icons/bug_report/svg/bug_report-black-48dp.svg" alt="Logo" />
+      </a>
+      <a class="slogan" href="index.html">
+        <h1>DSN</h1>
+      </a>
+      <form
+        name="search"
+        method="get"
+        target="_top"
+        class="search"
+        title="Search"
+      >
+        <input type="text" placeholder="Search..." name="search" />
+        <input type="submit" value="" />
+      </form>
+      <div class="account menu-opener" title="Account">
+        <a href="profile.html">
+          <img
+            src="icons/account_circle/svg/account_circle-black-48dp.svg"
+            alt="Account"
+          />
+        </a>
+        <nav class="menu">
+          <a href="profile.html">Profile</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="login.html">Sign in / Sign up / Sign out</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- #region new post -->
+      <form class="new-post" name="new-post" method="get">
+        <input type="file" name="media" />
+        <input type="text" name="text" placeholder="Write a new post..." />
+        <input type="submit" value="" />
+      </form>
+      <!-- #endregion new post -->
+
+      <!-- #region posts 1 -->
+      <div class="post">
+        <div class="post-header">
+          <div class="avatar-holder">
+            <img src="images/persons/image.jpeg" alt="Profile Image" />
+          </div>
+          <h4>Help</h4>
+        </div>
+        <div class="post-body">
+          <p>
+            i need a good advice about a problam i have with my css file please
+            help me!
+          </p>
+        </div>
+        <div class="post-footer">
+          <form class="comment" name="comment" method="get">
+            <input
+              name="agree"
+              type="submit"
+              value=""
+              onclick="this.classList.add('agreed')"
+            />
+            <input type="text" placeholder="Write a comment..." />
+            <input name="send" type="submit" value="" />
+          </form>
+          <div class="comment-section">
+            <div class="comment">
+              <div class="comment-header">
+                <div class="avatar-holder">
+                  <img
+                    src="icons/account_circle/svg/account_circle-black-48dp.svg"
+                    alt="Profile Image"
+                  />
+                </div>
+                <h4>Random commenter</h4>
+              </div>
+              <div class="comment-body">
+                <p>Google it!</p>
+              </div>
+              <div class="comment-footer">
+                <form class="commenter" name="commenter" method="get">
+                  <input
+                    name="agree"
+                    type="submit"
+                    value=""
+                    onclick="this.classList.add('agreed')"
+                  />
+                </form>
+                <p class="counter">12</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion posts 1 -->
+
+      <!-- #region posts 2 -->
+      <div class="post">
+        <div class="post-header">
+          <div class="avatar-holder">
+            <img src="images/persons/image.jpg" alt="Profile Image" />
+          </div>
+          <h4>Please Help!!!</h4>
+        </div>
+        <div class="post-body">
+          <p>
+            i need a partner for a new startup comment if you are interesting!
+          </p>
+        </div>
+        <div class="post-footer">
+          <form class="comment" name="comment" method="get">
+            <input
+              name="agree"
+              type="submit"
+              value=""
+              onclick="this.classList.add('agreed')"
+            />
+            <input type="text" placeholder="Write a comment..." />
+            <input name="send" type="submit" value="" />
+          </form>
+          <div class="comment-section"></div>
+        </div>
+      </div>
+      <!-- #endregion posts 2 -->
+
+      <!-- #region posts 3 -->
+      <div class="post">
+        <div class="post-header">
+          <div class="avatar-holder">
+            <img src="images/persons/image2.jpeg" alt="Profile Image" />
+          </div>
+          <h4>No Title</h4>
+        </div>
+        <div class="post-body">
+          <p>Does someone want me to give him a project of my costumer?</p>
+        </div>
+        <div class="post-footer">
+          <form class="comment" name="comment" method="get">
+            <input
+              name="agree"
+              type="submit"
+              value=""
+              onclick="this.classList.add('agreed')"
+            />
+            <input type="text" placeholder="Write a comment..." />
+            <input name="send" type="submit" value="" />
+          </form>
+          <div class="comment-section">
+            <div class="comment">
+              <div class="comment-header">
+                <div class="avatar-holder">
+                  <img src="images/persons/image2.jpg" alt="Profile Image" />
+                </div>
+                <h4>Developer123</h4>
+              </div>
+              <div class="comment-body">
+                <p>Please contact me</p>
+              </div>
+              <div class="comment-footer">
+                <form class="commenter" name="commenter" method="get">
+                  <input
+                    name="agree"
+                    type="submit"
+                    value=""
+                    onclick="this.classList.add('agreed')"
+                  />
+                </form>
+                <p class="counter">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion posts 3 -->
+
+      <!-- #region posts 4 -->
+      <div class="post">
+        <div class="post-header">
+          <div class="avatar-holder">
+            <img src="images/persons/image.jpeg" alt="Profile Image" />
+          </div>
+          <h4>?</h4>
+        </div>
+        <div class="post-body">
+          <p>
+            Can someone help become a senior web developer so i can find a job
+            as a senior web developer?
+          </p>
+        </div>
+        <div class="post-footer">
+          <form class="comment" name="comment" method="get">
+            <input
+              name="agree"
+              type="submit"
+              value=""
+              onclick="this.classList.add('agreed')"
+            />
+            <input type="text" placeholder="Write a comment..." />
+            <input name="send" type="submit" value="" />
+          </form>
+          <div class="comment-section"></div>
+        </div>
+      </div>
+      <!-- #endregion posts 4 -->
+
+      <!-- #region post loader -->
+      <span class="loader"></span>
+      <!-- #endregion post loader -->
+    </main>
+    <footer>
+      <p>This is the final project for Full Stack Course</p>
+      <p>
+        &copy;
+        <strong>Created By:</strong>
+        Or Linzer and Itamar Kalimi
+      </p>
+    </footer>
+  </body>
+</html>
